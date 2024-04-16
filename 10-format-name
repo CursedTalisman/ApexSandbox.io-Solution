@@ -5,7 +5,7 @@ public String formatName(String firstName, String lastName) {
     }else if(lastName==''||lastName==null){
         return firstName;
     }else if(firstName==''||firstName==null && lastName==''||lastName==null){
-        return ;
+        return '';
     }else{
         return lastName +', '+ firstName;
     }
