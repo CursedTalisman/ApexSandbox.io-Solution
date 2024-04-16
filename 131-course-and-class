@@ -9,9 +9,12 @@ public void createCourseAndClass(String name, String description) {
 
     apxio__Class__c cls = new apxio__Class__c();
     cls.Name = name;
-    cls.apxio__Description__c = description.left(255);
+    //cls.apxio__Description__c = description.left(255);
+    if(String.isNotBlank(description)){
+        cls.apxio__Description__c = description.left(255);
+    }
     cls.apxio__Course__c = course.Id;
 
     insert cls;
-    
+
 }
