@@ -1,0 +1,10 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    String hours = strTime.substringBefore(':');
+
+    Integer intHours = Integer.valueOf(hours);
+
+    if(intHours<12){
+        return strTime+ ' AM';
+    }
+}
