@@ -4,11 +4,9 @@ public String formatName(String firstName, String lastName) {
         return lastName;
     }else if(lastName==''||lastName==null){
         return firstName;
-    }
-    //else if(firstName==''||firstName==null && lastName==''||lastName==null){
-    //     return '';
-    // }
-    else{
+    }else if(firstName==''||firstName==null && lastName==''||lastName==null){
+        return ;
+    }else{
         return lastName +', '+ firstName;
     }
 }
