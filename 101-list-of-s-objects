@@ -4,11 +4,11 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
     List<sObject> newlist = new List<sObject>();
 
     for(Account acc:accounts){
-        newlist.add(acc);
+        newlist.add(sObject(acc));
     }
 
     for(Contact con: contacts){
-        newlist.add(acc);
+        newlist.add(sObject(acc));
     }
 
     return newlist;
