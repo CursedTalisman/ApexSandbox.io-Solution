@@ -3,9 +3,9 @@ public Boolean isBirthday(Contact c) {
     Integer month = c.Birthdate.month();
     Integer day = c.Birthdate.day();
 
-    Date date = System.today();
-    Integer day1 = date.day();
-    Integer month1 = date.month();
+    Date date1 = System.today();
+    Integer day1 = date1.day();
+    Integer month1 = date1.month();
 
 
     if(day==day1 && month==month1){
