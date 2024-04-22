@@ -1,0 +1,10 @@
+public void linkParent(Case c1, Case c2) {
+    //code here
+
+    DateTime dt1 = c1.CreatedDate;
+    DateTime dt2 = c2.CreatedDate;
+
+    if(dt1<dt2 && c1.ContactId==c2.ContactId){
+        c2.ParentId = c1.Id;
+    }
+}
