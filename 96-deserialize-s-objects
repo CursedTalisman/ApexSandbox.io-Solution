@@ -1,0 +1,9 @@
+public List<Account> getAccountsFromJSONString(String inputJSON){
+    // code here
+    if(inputJSON==NULL){
+        return NULL;
+    }
+    List<Account> deserialized = (List<Account>)JSON.Deserialize(inputJSON, List<Account>.class);
+    return deserialized;
+
+}
